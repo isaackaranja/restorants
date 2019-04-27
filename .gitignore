@@ -243,3 +243,11 @@ pip-selfcheck.json
 **/IntegrationServer/XAStore/
 **/IntegrationServer/packages/Wm*/
 
+.idea/inspectionProfiles/
+.idea/markdown-navigator.xml
+.idea/markdown-navigator/
+.idea/misc.xml
+.idea/modules.xml
+.idea/restorants.iml
+.idea/vcs.xml
+templates/
