@@ -16,10 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from hotel.views import HotelViewList, HotelView
+from hotel.views import HotelViewList, HotelView, MealView, MealViewAllAndCreate
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('hotels/', HotelViewList().as_view()),
-    #path('hotels/<int:pk>/', HotelView().as_view()),
+    path('hotels/<int:pk>/', HotelView().as_view()),
+    path('meals/', MealViewAllAndCreate().as_view()),
+    path('meals/<int:pk>/', MealView().as_view())
 ]
