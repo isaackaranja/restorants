@@ -19,7 +19,6 @@ class MealView(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = MealSerializer
 
 
-
 class MealViewAllAndCreate(generics.ListCreateAPIView):
     queryset = Meal.objects.all()
     serializer_class = MealSerializer
